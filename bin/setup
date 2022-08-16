@@ -1,0 +1,9 @@
+#!/bin/bash
+
+
+for F in SteuerParameter Einkommen Steuereckwerte
+do
+
+ sed 's#,#.#g' ../data/${F}.csv > /tmp/${F}.csv
+ 
+done
